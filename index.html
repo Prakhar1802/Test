@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SublimeX</title>
+
+    <!-- Awesome font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Awesome font cdn -->
+
+    <!-- Styling link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Styling link -->
+
+    <!-- swiper Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- swiper Link -->
+</head>
+
+<body>
+    <!-- Header Section start -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="Media/logo.png" alt="Logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#review">Reviews</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-bar"></div>
+            <div class="fa fa-phone" id="phone"></div>
+            <div class="fa fa-shopping-cart" id="shopping"></div>
+            <div class="fa fa-user" id="login"></div>
+        </div>
+
+        <div class="shopping-cart">
+            <div id="checkout">
+                <h3 id="total_item" class="sub-heading">
+                    Total Item : 0
+                </h3>
+                <h3 id="total_price" class="sub-heading">
+                    Total Price : ₹ 00/-
+                </h3>
+                <button class="btn">
+                    Checkout
+                </button>
+
+            </div>
+            <table>
+                <thead>
+                    <td>
+                        Item
+                    </td>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Quantity
+                    </td>
+                    <td>
+                        Price
+                    </td>
+                    <td>
+                        Remove
+                    </td>
+                </thead>
+                <tbody id="table_body">
+                    <!-- <tr>
+                        <td><img src="images/fruit1.png" alt="fruit"></td>
+                        <td>Mango</td>
+                        <td>
+                            <button class="dec_btn">-</button>
+                            <span>1</span>
+                            <button class="inc_btn">+</button>
+                        </td>
+                        <td>10</td>
+                        <td><i class="fa fa-trash"></i></td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+        </div>
+
+        <form action="" class="login-form">
+            <h2>Log in</h2>
+            <input type="text" id="email" class="box" placeholder="Enter Email">
+            <input type="password" id="password" class="box" placeholder="Enter Password">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+            <button class="btn">Sign in</button>
+            <a href="#">Forget Password?</a>
+            <h3>Don't have an Account?</h3>
+            <a href="#">Create Account</a>
+        </form>
+
+        <div class="contact-details">
+            <div class="phone">
+                Phone: +9167824xxxxx
+            </div>
+            <div class="email">
+                <a href="#" class="email">
+                    Email: test.mail@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Slider Start -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio button start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- radio button end -->
+
+            <!-- slide image start -->
+            <div class="slide first">
+                <div class="image">
+                    <div class="left">
+                        <h1 class="heading">Product Name</h1>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia
+                            enim labore, recusandae praesentium ipsum voluptatem modi? Dolorem fugit, numquam autem esse
+                            a nobis illo sapiente, reprehenderit, provident distinctio nihil.
+                        </p>
+                        <button class="btn">
+                            <a href="#">Shop Now</a>
+                        </button>
+
+                    </div>
+                    <div class="right">
+                        <img src="Media/Bag1.png" alt="Bag">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <div class="left">
+                        <h1 class="heading">Product Name</h1>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia
+                            enim labore, recusandae praesentium ipsum voluptatem modi? Dolorem fugit, numquam autem esse
+                            a nobis illo sapiente, reprehenderit, provident distinctio nihil.
+                        </p>
+                        <button class="btn">
+                            <a href="#">Shop Now</a>
+                        </button>
+
+                    </div>
+                    <div class="right">
+                        <img src="Media/Tshirt1.jpg" alt="Bag">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <div class="left">
+                        <h1 class="heading">Product Name</h1>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia
+                            enim labore, recusandae praesentium ipsum voluptatem modi? Dolorem fugit, numquam autem esse
+                            a nobis illo sapiente, reprehenderit, provident distinctio nihil.
+                        </p>
+                        <button class="btn">
+                            <a href="#">Shop Now</a>
+                        </button>
+
+                    </div>
+                    <div class="right">
+                        <img src="Media/Cup1.jpg" alt="Bag">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image">
+                    <div class="left">
+                        <h1 class="heading">Product Name</h1>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia
+                            enim labore, recusandae praesentium ipsum voluptatem modi? Dolorem fugit, numquam autem esse
+                            a nobis illo sapiente, reprehenderit, provident distinctio nihil.
+                        </p>
+                        <button class="btn">
+                            <a href="#">Shop Now</a>
+                        </button>
+
+                    </div>
+                    <div class="right">
+                        <img src="Media/Bottle1.jpg" alt="Bag">
+                    </div>
+                </div>
+            </div>
+            <!-- slide image end -->
+
+            <!-- Automatic nevigation start -->
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- Automatic nevigation end -->
+
+            <!-- Manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- Manual navigation end -->
+        </div>
+    </div>
+    <!-- Slider End -->
+
+    <!-- feature section start -->
+    <section class="features" id="features">
+        <h1 class="heading">
+            Our <span>Features</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Media/customized.png" class="img-3" alt="Customized">
+                <h3>Customized</h3>
+                <p class="feature-header">Get Customized product with best and effective price</p>
+                <div class="more">
+                    <i class="fa fa-times-circle-o" id="cross-1"></i>
+                    <p class="feature_explain">We ensure to give you the customized products, also we check the
+                        product before delivary,
+                        and we collect the products from the factory directly </p>
+                </div>
+                <a href="#features" class="btn btn-more" id="read-1">Read More</a>
+
+            </div>
+            <div class="box">
+                <img src="Media/delivary.png" alt="delivery">
+                <h3>Free Delivary</h3>
+                <p class="feature-header">Get Delivered out products with fast and safe in effective price</p>
+                <div class="more">
+                    <i class="fa fa-times-circle-o" id="cross-2"></i>
+                    <p class="feature_explain">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+                        minus vero libero dolorem alias quas officiis voluptatum incidunt inventore eum. </p>
+                </div>
+                <a href="#features" class="btn btn-more" id="read-2">Read More</a>
+
+            </div>
+            <div class="box">
+                <img src="Media/Payment.png" alt="payment">
+                <h3>Easy Payment</h3>
+                <p class="feature-header">Get fresh and organic product with best and effective price</p>
+                <div class="more">
+                    <i class="fa fa-times-circle-o" id="cross-3"></i>
+                    <p class="feature_explain">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+                        minus vero libero dolorem alias quas officiis voluptatum incidunt inventore eum. </p>
+                </div>
+                <a href="#features" class="btn btn-more" id="read-3">Read More</a>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- feature section End -->
+
+    <!-- Product section start -->
+    <section class="products" id="products">
+        <h1 class="heading">
+            Our <span>Products</span>
+        </h1>
+        <div class="arrival product-slider">
+            <h2 class="sub-heading">
+                New Arrivals
+            </h2>
+            <div id="arrival" class="arrival-box">
+            </div>
+        </div>
+        <!-- </div>
+        </div>
+        </div> -->
+    </section>
+    <!-- Product section End -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
